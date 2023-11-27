@@ -3,11 +3,13 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "localhost",
-        pathname: "**",
-        port: "3000",
         protocol: "http",
+        hostname: "localhost",
       },
+      {
+        protocol: "https",
+        hostname: "digital-marketplace-production-cb23.up.railway.app"
+      }
     ],
   },
 };
